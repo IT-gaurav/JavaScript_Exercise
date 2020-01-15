@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+header {
+    height: 100px;
+    background-color: blue;
+    color: aliceblue;
+    font-size: 22px;
+    display: flex;
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 2 span;
+    grid-row: 2 span; */
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    text-align: center;
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    margin-top: 25px;
+    border-collapse: collapse;
+}
+
+.input {
+    padding: 20px;
+    width: max-content;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.output {
+    padding: 20px;
+    width: max-content;
+    height: max-content;
+    margin: auto;
+}
+
+.input, .output {
+    /* border: 2px solid black; */
+}
+
+button {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 18px;
+    padding: 8px;
+    border-radius: 0px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
+    box-shadow: rgb(0, 0, 0, 0.2) 5px 5px 15px 5px;
+    border: 2px solid rgb(28, 110, 164);
+    display: inline-block;
+    margin: 25px 5px;
+}
+
+button:hover {
+    background: #1C6EA4;
+}
+
+button:active {
+    background: #144E75;
+}
