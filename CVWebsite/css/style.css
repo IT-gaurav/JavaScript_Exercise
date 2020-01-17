@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 100px;
+    background-color: bisque;
+}
+
+header ul li {
+    display: inline;
+    padding: 20px;
+    float: right;
+}
+
+main {
+    background-color: aquamarine;
+    padding: 50px;
+}
+
+.visitingCard {
+    margin: auto;
+    height: 250px;
+    width: 500px;
+    background-color: beige;
+}
+
+.visitingCardRight {
+    border-left: 1px solid blue;
+    float: right;
+}
+
+.visitingCardLeft {
+    float: left;
+}
