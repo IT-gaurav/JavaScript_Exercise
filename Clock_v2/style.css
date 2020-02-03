@@ -25,6 +25,7 @@ body {
     border-radius: 50%;
     background: white;
     margin: auto;
+    display: flex;
 }
 
 .edge {
@@ -86,6 +87,8 @@ body {
     width: 7px;
     border-radius: 30%;
     margin-left: -3.5px;
+    transform: rotate(180deg);
+    transform-origin: top;
 }
 
 #min {
@@ -96,6 +99,8 @@ body {
     background: red;
     border-radius: 30%;
     margin-left: -2.5px;
+    transform: rotate(60deg);
+    transform-origin: top;
 }
 
 #sec {
@@ -103,7 +108,32 @@ body {
     left: 50%;
     height: 150px;
     width: 3px;
-    background: yellow;
+    background: yellowgreen;
     border-radius: 30%;
     margin-left: -1.5px;
+    transform: rotate(36deg);
+    transform-origin: top;
+    /* animation: clock 1s infinite; */
+}
+
+/* @keyframes clock {
+    0% {
+        transform: rotate(6deg);
+        transform-origin: top;
+    }
+    100% {
+        transform: rotate(360deg);
+        transform-origin: top;
+    }
+} */
+
+span {
+    height: max-content;
+    width: max-content;
+    padding: 10px;
+    font-size: 22px;
+    margin: auto;
+    margin-top: 35px;
+    background-color: lightgray;
+    border-radius: 39%;
 }
