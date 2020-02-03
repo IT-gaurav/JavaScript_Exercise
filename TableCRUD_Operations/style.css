@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table, tr, td {
+    padding: 8px;
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 3px;
+}
+
+input {
+    border-radius: 5%;
+    width: 80%;
+    height: 25px;
+}
+
+#thead td {
+    font-size: larger;
+    font-weight: bold;
+}
+
+span {
+    display: none;
+}

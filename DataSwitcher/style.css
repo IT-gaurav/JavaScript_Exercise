@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    /* margin: auto; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: pink;
+    height: 700px;
+    width: 700px;
+    overflow: hidden;
+    display: flex;
+}
+
+.content {
+    margin: 0 auto;
+    line-height: 500px;
+    background: coral;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    position: relative;
+    font-size: 7em;
+    top: 100%;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+}
+
+button {
+    padding: 20px;
+    background: greenyellow;
+    font-size: larger;
+}
+
+.ani {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* @keyframes mymove {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 200px;
+    }
+}
+
+.animate {
+    position: relative;
+    animation: mymove 1s 1;
+} */
