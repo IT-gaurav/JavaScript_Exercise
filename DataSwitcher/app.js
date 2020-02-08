@@ -8,6 +8,10 @@ for (let i = 0; i < 32; i++) {
     counter[i] = '(' + (i + 1) + ').jpg';
 
 }
+console.log(counter[0]);
+
+counter[0] = 'index.html'
+console.log(counter[0]);
 
 // inner.style.display = "none"
 
