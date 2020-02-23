@@ -1,0 +1,123 @@
+<html>
+	<head>
+		 <title>Array JS </title>
+		 
+		 <style type="text/css">
+		 table, td{
+			border: 1px solid black; 
+		 }
+		 
+		 </style>
+		 
+		 <script type="text/javascript">
+		 
+		 var num=[];
+		 
+		 function calculateTax(){
+			num[0]=Number(document.getElementById("ID1").value);
+			num[1]=num[0]*0.05;
+			
+			document.getElementById("ID2").innerHTML=num[1].toFixed(2);;
+			num[2]=num[0]*0.0997;
+			
+			document.getElementById("ID3").innerHTML=num[2].toFixed(2);
+			num[3]=num[0]+num[1]+num[2];
+			
+			document.getElementById("ID4").value=num[3].toFixed(2);
+		}
+		 
+		var num = arrSort; 
+		 function ascending(){
+			
+			
+			arrSort = num.sort(function (a, b) { return a - b; });
+
+			var text1 = "Ascending\n";
+			 for (i = 0; i < arrSort.length; i++) {
+			 text1 += arrSort[i] + "\n";
+			 }
+			 alert(text1);
+		 }
+
+			function descending(){
+			
+			
+			arrSort = num.sort(function (a, b) { return b - a; });
+
+			var text1 = "Descending\n";
+			 for (i = 0; i < arrSort.length; i++) {
+			 text1 += arrSort[i] + "\n";
+			 }
+			 alert(text1);
+		 }
+
+		 
+		 
+		 </script>
+		 
+	</head>
+	
+	<body>
+		<table style="padding:20px;">
+		
+			<tr>
+				<th>Example</th>
+			</tr>
+			
+			<!--tr>
+				<th>
+					You sell a taxable good for $100. Taxes are calculated as follows: 
+				</th>
+			</tr-->
+			
+			
+			<tr>
+				<td>
+					<label for="sPrice" name="sPrice" >Selling Price :</label>
+				</td>
+				<td>
+					<input type="text" id="ID1" placeholder="Selling price in CAD" name="sPrice" required>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<label for="GST"> GST ( 5%) :</label>
+				</td>
+				<td>
+					<span id="ID2" placeholder=" 5% GST" >
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<label for="QST"> QST (9.975%) :</label>
+				</td>
+				<td>
+					<span id="ID3" placeholder="9.98% QST" >
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<label for="Total"> Total :</label>
+				</td>
+				<td>
+					<input type="text" id="ID4" placeholder="Total" name="Total" >
+				</td>
+				
+			</tr>
+
+		</table>
+		
+		<button type="button" onclick="calculateTax()">Calculate tax</button>     
+
+	    <button type="button" onclick="ascending()">Ascending</button>     
+		<button type="button" onclick="descending()">Decending</button>     
+			
+			
+		
+	
+	</body>
+	
+</html>
