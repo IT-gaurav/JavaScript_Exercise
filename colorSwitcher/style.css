@@ -1,0 +1,16 @@
+body {
+    background: lightgray;
+    display: flex;
+}
+
+.box {
+    height: 205px;
+    width: 205px;
+    background: black;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.black {
+    background: red;
+}

@@ -12,3 +12,6 @@ addBtn.onclick = () => {
     userInput.value = "";
 }
 
+
+userInput.addEventListener()
+
